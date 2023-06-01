@@ -13,14 +13,14 @@
       justify-content: space-between;
       padding: 20px;
       margin: 0 auto;
-      max-width: 1000px;
+      max-width: 800px;
     }
     .title {
       margin-right: auto;
     }
     .button {
       display: inline-block;
-      background-color: #BAE376; /* Cambiar el color a tu tono deseado */
+      background-color: #2ecc71; /* Cambiar el color a tu tono deseado */
       color: black;
       padding: 12px 24px;
       font-size: 18px;
@@ -34,13 +34,42 @@
       padding: 0;
     }
     .facebook-button img {
-      height: 40px;
+      height: 30px;
       vertical-align: middle;
+    }
+    .section {
+      background-color: #222222;
+      padding: 40px;
+      margin: 20px;
+    }
+    .section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .section-left {
+      width: 60%;
+      float: left;
+    }
+    .section-right {
+      width: 40%;
+      float: right;
+      text-align: center;
+    }
+    .section-right img {
+      max-width: 100%;
+      height: auto;
+    }
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .section-description {
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <header>
   <h1>
     <span class="title">Mezcal Orgánico Yiez Yu</span>
     <a href="https://www.facebook.com/mezcaleria.vallesdeoaxaca" class="button facebook-button">
@@ -48,19 +77,20 @@
     </a>
     <a href="https://wa.me/9511460872" class="button">Contáctanos</a>
   </h1>
-  </header>
-  
-    <div class="section">
+
+  <div class="section">
     <div class="section-left">
-      <h1>Un Mezcal Orgánico de Clase Mundial: Yiez Yu de Santiago Matatlán</h1>
-      <p>Mezcal Orgánico Yiez Yu es una empresa familiar de Santiago Matatlán, Oaxaca dedicada a ofrecer un mezcal de clase mundial, hecho a partir de maguey orgánico, combinado con técnicas tradicionales y modernas. Nuestras fórmulas especiales de producción aseguran que nuestro mezcal esté siempre lleno de sabor y características únicas. No solo estamos orgullosos de nuestro mezcal de clase mundial, sino también de nuestro compromiso con la tierra y el medio ambiente, utilizando solo los mejores ingredientes naturales para cada lote. Ven y descubre el sabor y la calidad de Mezcal Orgánico Yiez Yu de Santiago Matatlán.</p>
+      <h2 class="section-title">Un Mezcal Orgánico de Clase Mundial: Yiez Yu de Santiago Matatlán</h2>
+      <p class="section-description">Mezcal Orgánico Yiez Yu es una empresa familiar de Santiago Matatlán, Oaxaca dedicada a ofrecer un mezcal de clase mundial, hecho a partir de maguey orgánico, combinado con técnicas tradicionales y modernas. Nuestras fórmulas especiales de producción aseguran que nuestro mezcal esté siempre lleno de sabor y características únicas. No solo estamos orgullosos de nuestro mezcal de clase mundial, sino también de nuestro compromiso con la tierra y el medio ambiente, utilizando solo los mejores ingredientes naturales para cada lote. Ven y descubre el sabor y la calidad de Mezcal Orgánico Yiez Yu de Santiago Matatlán.</p>
     </div>
     <div class="section-right">
-      <img src="section-image.jpg" alt="Sección de imagen">
+      <img src="13.jpg" alt="Imagen de la sección">
     </div>
   </div>
+
 </body>
 </html>
+
 
 
 
