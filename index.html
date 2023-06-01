@@ -9,23 +9,18 @@
       color: white;
       font-family: 'Roboto', sans-serif;
     }
-    .section-left img {
-      max-width: 30%; /* Cambiar el tamaño de las imágenes del carrusel a pequeño */
+    .section-left img,
+    .section-right img,
+    .section-right1 img {
+      display: block;
+      margin: 0 auto;
+      max-width: 50%; /* Centrar las imágenes y ajustar el tamaño */
       height: auto;
     }
-    .section-right img {
-      max-width: 40%; /* Cambiar el tamaño de las imágenes del carrusel a pequeño */
-      height: auto;
-    }
-    
-     .section-right1 img {
-      max-width: 30%; /* Cambiar el tamaño de las imágenes del carrusel a pequeño */
-      height: auto;
-    }
-    .section-left p {
-      font-size: 18px;
-    }
-    .section-right p {
+    .section-left p,
+    .section-right p,
+    .section-right1 p {
+      text-align: center; /* Centrar el texto */
       font-size: 18px;
     }
     h1 {
@@ -68,7 +63,9 @@
       display: table;
       clear: both;
     }
-    .section-left, .section-right {
+    .section-left,
+    .section-right,
+    .section-right1 {
       width: 50%;
       float: left;
       font-size: 20px; /* Cambiar el tamaño de fuente */
