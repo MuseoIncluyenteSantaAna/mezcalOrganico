@@ -51,6 +51,7 @@
     .section-left {
       width: 60%;
       float: left;
+      font-size: 18px; /* Cambiar el tamaño de fuente */
     }
     .section-right {
       width: 40%;
@@ -58,7 +59,7 @@
       text-align: center;
     }
     .section-right img {
-      max-width: 80%;
+      max-width: 60%; /* Reducir el tamaño de las imágenes del carrusel */
       height: auto;
     }
     .carousel .item {
@@ -73,14 +74,45 @@
     }
     .map-section {
       background-color: #222222;
-      padding: 40px;
-      margin: 20px;
+      padding: 0; /* Cambiar el padding */
+      margin: 20px 0; /* Cambiar el margin */
       text-align: center;
     }
+    .map-section h2 {
+      font-size: 24px; /* Aumentar el tamaño de la fuente del título */
+      margin-bottom: 20px; /* Agregar margen inferior */
+    }
     .map-section iframe {
-      max-width: 100%;
+      width: 100%; /* Hacer que el mapa ocupe todo el ancho de la sección */
       height: 450px;
       border: 0;
+    }
+    .contact-section {
+      background-color: #222222;
+      padding: 40px;
+      margin: 20px;
+    }
+    .contact-section input,
+    .contact-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #333333;
+      border: none;
+      color: white;
+    }
+    .contact-section textarea {
+      height: 150px;
+    }
+    .contact-section button {
+      background-color: #2ecc71;
+      color: black;
+      padding: 12px 24px;
+      font-size: 18px;
+      text-decoration: none;
+      border-radius: 25px;
+      border: none;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
@@ -148,12 +180,21 @@
   </div>
 
   <div class="map-section">
-    <h2 class="section-title">Localización</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122106.56245715612!2d-96.58978955328517!3d16.982906631228175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8592df3105bdffbf%3A0x777e7800e5acba06!2sCarr.%20Internacional%2C%20Santiago%20Matatl%C3%A1n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1685645341527!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2 class="section-title" style="font-size: 24px;">Nuestra ubicación</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122106.56245715612!2d-96.58978955328517!3d16.982906631228175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8592df3105bdffbf%3A0x777e7800e5acba06!2sCarr.%20Internacional%2C%20Santiago%20Matatl%C3%A1n%2C%20Oax.!5e0!3m2!1ses!2smx!4v1685645341527!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <div class="other-section">
-    <!-- Contenido de la sección "other-section" aquí -->
+  <div class="contact-section">
+    <h2 class="section-title" style="font-size: 24px;">Formulario de Contacto</h2>
+    <form>
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Correo:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Mensaje:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      <input type="submit" value="Enviar" class="button">
+    </form>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
