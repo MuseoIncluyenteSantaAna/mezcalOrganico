@@ -8,18 +8,28 @@
       color: white;
     }
     h1 {
-      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .title {
+      margin-right: auto;
     }
     .contact-button {
       background-color: green;
       color: black;
-      padding: 10px 20px;
+      padding: 12px 24px;
+      font-size: 18px;
       text-decoration: none;
+      border-radius: 25px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
 <body>
-  <h1>Mezcal Orgánico Yiez Yu</h1>
-  <a href="contact.html" class="contact-button">Contáctanos</a>
+  <h1>
+    <span class="title">Mezcal Orgánico Yiez Yu</span>
+    <a href="https://wa.me/5621617843" class="contact-button">Contáctanos</a>
+  </h1>
 </body>
 </html>
