@@ -8,6 +8,9 @@
       background-color: black;
       color: white;
     }
+    h1, h2, p {
+      font-family: 'Roboto', sans-serif;
+    }
     h1 {
       display: flex;
       align-items: center;
@@ -48,14 +51,12 @@
       display: table;
       clear: both;
     }
-    .section-left {
-      width: 60%;
+    .section-left, .section-right {
+      width: 50%;
       float: left;
       font-size: 20px; /* Cambiar el tamaño de fuente */
     }
     .section-right {
-      width: 40%;
-      float: right;
       text-align: center;
     }
     .section-right img {
@@ -178,6 +179,19 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  
+    <div class="section">
+    <div class="section-left">
+      <img src="2.jpg" alt="Imagen izquierda">
+      <p>Conoce nuestro proceso de elaboración</p>
+      <a href="#" class="button">Click aquí</a>
+    </div>
+    <div class="section-right">
+      <img src="7.jpg" alt="Imagen derecha">
+      <p>Visita nuestra degustación</p>
+      <a href="#" class="button">Click aquí</a>
+    </div>
+  </div>
 
   <div class="map-section">
     <h2 class="section-title" style="font-size: 24px;">Nuestra ubicación</h2>
@@ -201,6 +215,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 
 
