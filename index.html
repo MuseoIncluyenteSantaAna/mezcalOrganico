@@ -14,13 +14,13 @@
     .section-right1 img {
       display: block;
       margin: 0 auto;
-      max-width: 50%; /* Centrar las imágenes y ajustar el tamaño */
+      max-width: 50%;
       height: auto;
     }
     .section-left p,
     .section-right p,
     .section-right1 p {
-      text-align: center; /* Centrar el texto */
+      text-align: center;
       font-size: 18px;
     }
     h1 {
@@ -36,7 +36,7 @@
     }
     .button {
       display: inline-block;
-      background-color: #BAE376; /* Cambiar el color a tu tono deseado */
+      background-color: #BAE376;
       color: black;
       padding: 12px 24px;
       font-size: 18px;
@@ -68,13 +68,13 @@
     .section-right1 {
       width: 50%;
       float: left;
-      font-size: 20px; /* Cambiar el tamaño de fuente */
+      font-size: 20px;
     }
     .section-right {
       text-align: center;
     }
     .section-right img {
-      max-width: 60%; /* Reducir el tamaño de las imágenes del carrusel */
+      max-width: 60%;
       height: auto;
     }
     .carousel .item {
@@ -93,16 +93,16 @@
     }
     .map-section {
       background-color: #222222;
-      padding: 0; /* Cambiar el padding */
-      margin: 20px 0; /* Cambiar el margin */
+      padding: 0;
+      margin: 20px 0;
       text-align: center;
     }
     .map-section h2 {
-      font-size: 60px; /* Aumentar el tamaño de la fuente del título */
-      margin-bottom: 20px; /* Agregar margen inferior */
+      font-size: 60px;
+      margin-bottom: 20px;
     }
     .map-section iframe {
-      width: 90%; /* Hacer que el mapa ocupe todo el ancho de la sección */
+      width: 90%;
       height: 450px;
       border: 0;
     }
@@ -133,6 +133,22 @@
       border: none;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     }
+    /* Estilos adicionales para hacer la página más llamativa */
+    .section-title {
+      font-size: 30px;
+      color: #BAE376;
+      margin-bottom: 10px;
+    }
+    .section-left,
+    .section-right1 {
+      text-align: center;
+    }
+    .section-left img,
+    .section-right1 img {
+      max-width: 70%;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -147,7 +163,7 @@
   <div class="section">
     <div class="section-left">
       <h2 class="section-title">Un Mezcal Orgánico de Clase Mundial: Yiez Yu de Santiago Matatlán</h2>
-      <p class="section-description">Mezcal Orgánico Yiez Yu es una empresa familiar de Santiago Matatlán, Oaxaca dedicada a ofrecer un mezcal de clase mundial, hecho a partir de maguey orgánico, combinado con técnicas tradicionales y modernas. Nuestras fórmulas especiales de producción aseguran que nuestro mezcal esté siempre lleno de sabor y características únicas. No solo estamos orgullosos de nuestro mezcal de clase mundial, sino también de nuestro compromiso con la tierra y el medio ambiente, utilizando solo los mejores ingredientes naturales para cada lote. Ven y descubre el sabor y la calidad de Mezcal Orgánico Yiez Yu de Santiago Matatlán.</p>
+      <p class="section-description">En Mezcal Orgánico Yiez Yu, nos dedicamos a producir mezcal de la forma tradicional en Santiago Matatlán, Oaxaca. Nuestro proceso de producción es meticuloso, comenzando con una selección cuidadosa de los ingredientes. Usamos los métodos tradicionales para la destilación, lo que nos permite ofrecer un mezcal único con un sabor único. Nuestra producción es orgánica, lo que significa que no hay pesticidas ni productos químicos involucrados. Estamos orgullosos de ofrecer un mezcal de calidad superior para disfrutar.</p>
     </div>
     <div class="section-right">
       <img src="13.jpg" alt="Imagen de la sección">
@@ -165,26 +181,26 @@
       <li data-target="#myCarousel" data-slide-to="5"></li>
     </ol>
 
-<div class="carousel-inner" role="listbox">
-  <div class="item active">
-    <img src="3.jpg" alt="Image 1" class="carousel-image">
-  </div>
-  <div class="item">
-    <img src="8.jpg" alt="Image 2" class="carousel-image">
-  </div>
-  <div class="item">
-    <img src="2.jpg" alt="Image 3" class="carousel-image">
-  </div>
-  <div class="item">
-    <img src="4.jpg" alt="Image 4" class="carousel-image">
-  </div>
-  <div class="item">
-    <img src="12.jpg" alt="Image 5" class="carousel-image">
-  </div>
-  <div class="item">
-    <img src="5.jpg" alt="Image 6" class="carousel-image">
-  </div>
-</div>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="3.jpg" alt="Image 1" class="carousel-image">
+      </div>
+      <div class="item">
+        <img src="8.jpg" alt="Image 2" class="carousel-image">
+      </div>
+      <div class="item">
+        <img src="2.jpg" alt="Image 3" class="carousel-image">
+      </div>
+      <div class="item">
+        <img src="4.jpg" alt="Image 4" class="carousel-image">
+      </div>
+      <div class="item">
+        <img src="12.jpg" alt="Image 5" class="carousel-image">
+      </div>
+      <div class="item">
+        <img src="5.jpg" alt="Image 6" class="carousel-image">
+      </div>
+    </div>
 
     <!-- Controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -197,7 +213,9 @@
     </a>
   </div>
   
-<div class="section">
+  <div class="section">
+  <h2 class="section-title">Acerca de nosotros</h2>
+  <div class="section">
     <div class="section-left">
       <img src="10.jpg" alt="Imagen izquierda">
       <p>Conoce nuestro proceso de elaboración</p>
@@ -228,7 +246,7 @@
     </form>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
