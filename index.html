@@ -163,7 +163,7 @@
   <div class="section">
     <div class="section-left">
       <h2 class="section-title">Un Mezcal Orgánico de Clase Mundial: Yiez Yu de Santiago Matatlán</h2>
-      <a href="https://wa.me/9511460872" class="button">Conócenos</a>
+      <button id="audioButton" class="button">Conócenos</button>
     </div>
     <div class="section-right">
       <img src="13.jpg" alt="Imagen de la sección">
@@ -245,9 +245,26 @@
       <input type="submit" value="Enviar" class="button">
     </form>
   </div>
-
+    
+  <audio id="audio" src="archivo.mp3"></audio>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script>
+    var audio = document.getElementById('audio');
+    var audioButton = document.getElementById('audioButton');
+    var isPlaying = false;
+
+    audioButton.addEventListener('click', function() {
+      if (isPlaying) {
+        audio.pause();
+        audioButton.innerText = 'Conócenos';
+      } else {
+        audio.play();
+        audioButton.innerText = 'Pausar';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
 </body>
 </html>
 
